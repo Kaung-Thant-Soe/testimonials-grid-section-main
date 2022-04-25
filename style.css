@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+
+}
+
+body{
+
+    font-size: 13px;
+    background-color: hsl(210, 46%, 95%);
+    max-height: 100vh;
+    height: 100vh;
+    display: grid;
+    align-content: space-around;
+    justify-content: space-around;
+
+}
+
+.container{
+
+    display: grid;
+    width: 1142px;
+    grid-template-columns: 256px auto 256px 239px;
+    justify-content: center;
+    gap: 25px;
+    line-height: 17px;
+    
+}
+
+img{
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid ;
+
+}
+
+.fact{
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    
+}
+
+.varify{
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+
+}
+
+.feedback{
+
+    font-weight: 600;
+    font-size: 1.7em;
+    margin: 18px 0 18px 0;
+    line-height: 25px;
+
+}
+
+/* For Daniel Clifford */
+
+.daniel{
+
+    background-image: url(/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 77% top;
+    background-color: hsl(263, 55%, 52%);
+    grid-area: 1/ span 2;
+    border-radius: 10px;
+    padding: 25px;
+    color: hsl(0, 0%, 100%);
+
+}
+
+/* For Jonathan Walters */
+
+.jonathan{
+
+    background-color:  hsl(217, 19%, 35%);
+    border-radius: 10px;
+    padding: 25px;
+    color:hsl(0, 0%, 100%) ;
+
+}
+
+/* For Jeanette Harmon */
+
+.jeanette{
+
+   background-color: white;
+   border-radius: 10px;
+   padding: 25px;
+   color: hsl(217, 19%, 35%) ;
+
+}
+
+/* For Patrick Abrams */
+
+.patrick{
+
+    background-color: hsl(219, 29%, 14%);
+    grid-column: 2 / span 2;
+    border-radius: 10px;
+    padding: 25px;
+    color: white ;
+
+}
+
+/* For Kira Whittle */
+
+.kira{
+
+    background-color:white;
+    grid-row: 1 / 3 ;
+    grid-column: 4 / 4;
+    border-radius: 10px;
+    padding: 25px;
+    color:hsl(217, 19%, 35%);
+
+}
+/* For Mobile 375px */
+
+@media screen and (max-width:375px) {
+
+    body{
+
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .container{
+
+        display: flex;
+        flex-direction: column;
+        width: 339px;
+        height: 250vh;
+        justify-content: center;
+
+    }
+
+    .daniel{
+
+        background-position: 89% top;
+
+    }
+    
+}
